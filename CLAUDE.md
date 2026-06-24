@@ -80,8 +80,9 @@ Files without valid frontmatter should be flagged when encountered.
 |---|---|---|
 | `council` | "council this", "help me decide", "should I" | Runs a decision through 5 AI advisors (Contrarian, First Principles, Expansionist, Outsider, Executor) → peer review → chairman synthesis. Use for high-stakes forks. |
 | `coding-standards` | Any coding or implementation task | Enforces chunked implementation, documented changes, commented code, automated tests, and strict git discipline across all AI-generated code. |
+| `inbox-triage` | "/inbox-triage", "triage the inbox", "process inbox files" | Reads every file in `inbox/`, classifies type and domain, drafts a structured note using the right template, and commits to the correct folder (or surfaces for review if ambiguous). |
 
-More skills to add: `/inbox-triage`, `/weekly-brief`, `/write-decision-record`.
+More skills to add: `/weekly-brief`, `/write-decision-record`.
 
 ## Agent specs
 
