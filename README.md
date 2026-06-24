@@ -9,8 +9,8 @@ A git-managed, LLM-queryable knowledge base for the product team building a comp
 | `context/` | Cross-domain knowledge: strategy, decisions, roadmap, research, stakeholders |
 | `domains/` | One folder per product surface; each has context, features, decisions, research |
 | `inbox/` | Raw, unprocessed drops — transcripts, Slack exports, links |
-| `docs/` | Contribution guide and reusable templates |
-| `.claude/` | Skills and commands for Claude Code workflows |
+| `docs/` | Contribution guide, templates, 25 agent specs, 53 PM blueprints |
+| `.claude/skills/` | Drop-in Claude Code skills (council, coding-standards) |
 
 ## How to contribute
 

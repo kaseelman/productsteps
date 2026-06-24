@@ -72,7 +72,46 @@ Files without valid frontmatter should be flagged when encountered.
 
 ## Skills
 
-`.claude/skills/` will contain PM-specific skills — check there for available workflows before doing manual work. Examples to come: `/inbox-triage`, `/weekly-brief`, `/write-decision-record`.
+`.claude/skills/` contains PM-specific skills. **Check here before doing manual work** — if a skill covers the task, use it.
+
+### Available skills
+
+| Skill | Trigger | What it does |
+|---|---|---|
+| `council` | "council this", "help me decide", "should I" | Runs a decision through 5 AI advisors (Contrarian, First Principles, Expansionist, Outsider, Executor) → peer review → chairman synthesis. Use for high-stakes forks. |
+| `coding-standards` | Any coding or implementation task | Enforces chunked implementation, documented changes, commented code, automated tests, and strict git discipline across all AI-generated code. |
+
+More skills to add: `/inbox-triage`, `/weekly-brief`, `/write-decision-record`.
+
+## Agent specs
+
+`docs/agent-specs/` contains 25 reusable agent specifications for PM workflows. Each is a self-contained skill definition — paste the system prompt block into any AI assistant. Available agents:
+
+**Discovery & Research**: Customer Insight Synthesiser, Competitive & Market Analyst, Data Storyteller
+
+**Strategy & Planning**: Strategy Document Writer, Quarterly Planning, OKR Health Check, GTM Planner, Roadmap Narrator
+
+**Specify & Design**: PRD Generator, Feature Spec Writer, Experiment Designer, UX Audit, Pricing Model Analyzer
+
+**Execution & Delivery**: Meeting Prep, Action Extractor, Status Update Writer, Decision Doc Writer, Retrospective Facilitator, Delivery Health Monitor
+
+**People & Org**: 1-1 Coach, Interview Kit Generator, Onboarding Guide Generator, Team Health Assessor
+
+**Cross-cutting**: Narrative Writer, Blueprint Advisor, The Council
+
+See `docs/agent-specs/Agent Ecosystem — Blueprint Mapping.md` for how these chain together across workflow loops.
+
+## Blueprints
+
+`docs/blueprints/` contains 53 PM reference documents. When answering questions about PM practice, frameworks, or strategy, check here first — there is likely a relevant blueprint. Structure:
+
+- `pm-blueprints/` — 27 deep-reference blueprints (experimentation, roadmapping, PLG, pricing, delivery, and more)
+- `company-playbooks/` — 13 breakdowns of how Notion, Linear, Figma, Shopify, Duolingo, and others build product
+- `situation-playbooks/` — first 90 days, 0-to-1, turnarounds, IC-to-manager, working with founders
+- `reference/` — metrics benchmarks, framework index, hiring questions, quote bank, tool stack guide
+- `frameworks/` — AI-era product competency framework, planning playbook by level and cadence
+
+Example: "Check the pricing blueprint and help me structure our monetisation model" → load `docs/blueprints/pm-blueprints/Blueprint - Pricing and Monetisation.md` first.
 
 ## Important caveats
 
